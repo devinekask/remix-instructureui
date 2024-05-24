@@ -9,6 +9,15 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@instructure/emotion": "^9.0.1",
+    "@instructure/ui-buttons": "^9.0.1",
+    "@instructure/ui-heading": "^9.0.1",
+    "@instructure/ui-icons": "^9.0.1",
+    "@instructure/ui-radio-input": "^9.0.1",
+    "@instructure/ui-react-utils": "^9.0.1",
+    "@instructure/ui-select": "^9.0.1",
+    "@instructure/ui-simple-select": "^9.0.1",
+    "@instructure/ui-view": "^9.0.1",
     "@remix-run/node": "^2.9.2",
     "@remix-run/react": "^2.9.2",
     "@remix-run/server-runtime": "^2.9.2",
