@@ -6,7 +6,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-	useRouteError,
+  useRouteError,
 } from "@remix-run/react";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -20,12 +20,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-			<InstUISettingsProvider instanceCounterMap={generateInstanceCounterMap()}>
-        {children}
-        <ScrollRestoration />
-        <Scripts />
-        <Analytics />
-				</InstUISettingsProvider>
+        <InstUISettingsProvider
+          instanceCounterMap={generateInstanceCounterMap()}
+        >
+          {children}
+          <ScrollRestoration />
+          <Scripts />
+          <Analytics />
+        </InstUISettingsProvider>
       </body>
     </html>
   );
