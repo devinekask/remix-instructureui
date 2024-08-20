@@ -24,10 +24,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
           instanceCounterMap={generateInstanceCounterMap()}
         >
           {children}
-          <ScrollRestoration />
-          <Scripts />
-          <Analytics />
         </InstUISettingsProvider>
+        <ScrollRestoration />
+        <Scripts />
+        <Analytics />
       </body>
     </html>
   );

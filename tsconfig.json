@@ -1,10 +1,11 @@
 {
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "app/components/BasicComponent.tsx"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "types": ["@vercel/remix", "node", "vite/client"],
     "isolatedModules": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
     "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "Bundler",

@@ -6,6 +6,8 @@ import { SimpleSelect } from "@instructure/ui-simple-select";
 import { IconCheckSolid } from "@instructure/ui-icons";
 import { RadioInput, RadioInputGroup } from "@instructure/ui-radio-input";
 
+import BasicComponent from "../components/BasicComponent";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -27,6 +29,8 @@ export default function Index() {
     <View>
       <Heading>Remix &amp; IntructureUi</Heading>
 
+      <BasicComponent />
+
       {/*      <SimpleSelect renderLabel="Uncontrolled Select" id="simpleSelect">
         <SimpleSelect.Option
           id="foo"
@@ -46,7 +50,7 @@ export default function Index() {
         </SimpleSelect.Option>
       </SimpleSelect> */}
 
-      <RadioInputGroup
+      {/*      <RadioInputGroup
         onChange={handleChange}
         name="example1"
         defaultValue="foo"
@@ -59,7 +63,7 @@ export default function Index() {
             label={input.label}
           />
         ))}
-      </RadioInputGroup>
+      </RadioInputGroup> */}
 
       {/*   <Autocomplete
         label="Names"
